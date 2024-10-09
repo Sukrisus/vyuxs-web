@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bedrock & Java Downloads</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: #121212;
+            color: white;
+            overflow-x: hidden;
+            scroll-behavior: smooth; /* This enables smooth scrolling */
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url('bg.png');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .hero-content a {
+            padding: 12px 25px;
+            font-size: 16px;
+            color: #000;
+            background-color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            margin: 0 15px; /* Margin for spacing */
+            display: inline-block; /* Make buttons inline-block for better alignment */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Drop shadow effect */
+            width: 200px; /* Fixed width for uniform size */
+        }
+
+        .hero-content a:hover {
+            background-color: #ddd;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.7); /* Glow effect on hover */
+        }
+
+        /* Download Sections */
+        .section {
+            padding: 80px 50px;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .download-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .download-section .download-item {
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .download-section .download-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .download-section .download-item h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .download-section .download-item a {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #000;
+            background-color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .download-section .download-item a:hover {
+            background-color: #ddd;
+        }
+
+        /* Footer */
+        footer {
+            padding: 40px 20px;
+            background-color: #111;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 36px;
+            }
+
+            .hero-content p {
+                font-size: 18px;
+            }
+
+            .section {
+                padding: 60px 20px;
+            }
+
+            .section h2 {
+                font-size: 28px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-content h1 {
+                font-size: 28px;
+            }
+
+            .hero-content p {
+                font-size: 16px;
+            }
+
+            .hero-content a {
+                width: auto; /* Auto width for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Download Bedrock & Java Edition Packs</h1>
+            <p>Select your platform to download your pack</p>
+            <a href="#bedrock">Bedrock Packs</a>
+            <a href="#java">Java Packs</a> <!-- Added Java Packs button -->
+        </div>
+    </section>
+
+    <!-- Bedrock Download Section -->
+    <section id="bedrock" class="section">
+        <h2>Download Bedrock Edition Packs</h2>
+        <p>The latest Bedrock packs are uploaded here.</p>
+        <div class="download-section">
+            <div class="download-item">
+                <h3>Awi x sosa pack</h3>
+                <a href="https://link-hub.net/791409/pack-i-guess">Download</a>
+            </div>
+            <div class="download-item">
+                <h3>Pack 2</h3>
+                <a href="#">Download</a>
+            </div>
+            <div class="download-item">
+                <h3>Pack 3</h3>
+                <a href="#">Download</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Java Download Section -->
+    <section id="java" class="section">
+        <h2>Download Java Edition Packs</h2>
+        <p>The latest Java packs are uploaded here by Yami.</p>
+        <div class="download-section">
+            <div class="download-item">
+                <h3></h3>
+                <a href="https://link-hub.net/791409/pack-i-guess">Download</a>
+            </div>
+            <div class="download-item">
+                <h3>Pack 2</h3>
+                <a href="#">Download</a>
+            </div>
+            <div class="download-item">
+                <h3>Pack 3</h3>
+                <a href="#">Download</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Yami/Vyux. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Smooth Scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
